@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="eventApp">
+<head>
+  <title>AngularJS Event Handling</title>
+  <script src="https://code.angularjs.org/1.8.2/angular.js"></script>
+</head>
+<body>
+  <h1>AngularJS Event Handling Example</h1>
+  <div ng-controller="EventController">
+    <button ng-click="handleClick()">Click Me</button>
+    <p ng-show="messageVisible">{{message}}</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

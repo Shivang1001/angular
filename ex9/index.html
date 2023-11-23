@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="reusableApp">
+<head>
+  <title>AngularJS Reusability Example</title>
+  <script src="https://code.angularjs.org/1.8.2/angular.js"></script>
+</head>
+<body>
+  <h1>AngularJS Reusability Example</h1>
+
+  <div ng-controller="MainController">
+    <user-profile user="user1"></user-profile>
+    <user-profile user="user2"></user-profile>
+    <product-card product="product1"></product-card>
+    <product-card product="product2"></product-card>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

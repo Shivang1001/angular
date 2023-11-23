@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>AngularJS Date Filter Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="AngulardateApp">
+  <div ng-controller="datectrl">
+    Enter Date: <input type="text" ng-model="sampledate" style="width:400px" /><br /><br />
+
+    Date with short expression: {{ sampledate | date: "short" }} <br /><br />
+    Date with mediumDate expression: {{ sampledate | date: "mediumDate" }} <br /><br />
+    Date with custom format expression: {{ sampledate | date: "yyyy-MM-dd HH:mm:ss" }} <br /><br />
+  </div>
+
+  <script>
+    var app = angular.module("AngulardateApp", []);
+    app.controller("datectrl", function ($scope) {
+      $scope.sampledate = new Date();
+    });
+  </script>
+</body>
+</html>
